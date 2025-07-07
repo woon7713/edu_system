@@ -26,7 +26,7 @@
         <td th:text="${teacher.id}"></td>
         <td th:text="${teacher.name}"></td>
         <td><a th:href="@{'/teachers/edit/' + ${teacher.id}}">수정</a>
-            <form th:action="@{'/teachers/delete/' + ${teacher.id}}" method="post">
+            <form th:action="@{'/teachers/delete/' + ${teacher.id}}" method="get">
                 <button type="submit">삭제</button>
             </form>
 
